@@ -369,7 +369,7 @@ class DataLayerHelper {
       }
       if (!skipListener) {
         this.executingListener_ = true;
-        this.listener_(this.model_, update);
+        this.listener_.listener(this.model_, update);
         this.executingListener_ = false;
       }
     }
